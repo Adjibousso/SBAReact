@@ -17,8 +17,7 @@ function App() {
         ></Route>
       </Routes>
       <footer/>
-      </BrowserRouter>
-      
+      </BrowserRouter>     
   
      
     </>
