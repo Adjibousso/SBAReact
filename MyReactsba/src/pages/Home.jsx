@@ -1,6 +1,7 @@
 import React from "react";
 import { Categories } from "../assets/mockData";
 import model from "../assets/images/model.jpg"
+import CategorieSection from "../compoments/CategorieSection";
 
 
 const Home = ()=>{
@@ -29,6 +30,7 @@ const Home = ()=>{
                     </div>
                 </div>
                 </div>
+                <CategorieSection/>
                 </div>
     )
 }
