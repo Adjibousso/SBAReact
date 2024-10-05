@@ -6,24 +6,32 @@ import {FaSearch, FaUser, FaShoppingCart} from "react-icons/fa";
 const NavBar = ()=> {
 
     return (
-        <nav className="bg=white shadow-md">
-<div>
+        <nav className="nav" >
+<div  className="container"> 
 
-    <div>
+    <div className="text-lg font-bold">
         <Link to= "/">Afric'art shop</Link>
     </div>
- <div>
+ <div className="form">
     <form>
-    <input type="text" placeholder="Search a product"/>
+    <input type="text" placeholder="Search a product" className="search"/>
 
-    <FaSearch></FaSearch>
+    <FaSearch className="fasearch"></FaSearch>
 </form>
 </div>
-<div>
+<div className="cart">
     <Link to= "/cart"><FaShoppingCart/></Link>
-    <button>Login | register</button>
-    <button> <FaUser/></button>
+    <button className="login">
+        Login | register</button>
+    <button className="user"> <FaUser/></button>
 </div>
+</div>
+<div className="navicon"> 
+    <Link className="hover:underline"> 
+    Home 
+    </Link>
+    <Link className="hover:underline color=blu"> Shop</Link>
+    <Link className="hover:underline">Contact</Link>
 </div>
         </nav>
     )

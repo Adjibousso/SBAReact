@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-<h1>Text</h1>
+
       <BrowserRouter>
       <NavBar />
       <Routes>
