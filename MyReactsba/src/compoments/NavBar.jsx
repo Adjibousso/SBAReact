@@ -1,6 +1,7 @@
 import React from "react";
-import {FaSearch, FaUser} from "react-icons/fa"
 import { Link } from "react-router-dom";
+import {FaSearch, FaUser, FaShoppingCart} from "react-icons/fa";
+
 
 const NavBar = ()=> {
 
@@ -9,7 +10,7 @@ const NavBar = ()=> {
 <div>
 
     <div>
-        <link to= "/">Afric'art shop</link>
+        <Link to= "/">Afric'art shop</Link>
     </div>
  <div>
     <form>
@@ -19,7 +20,7 @@ const NavBar = ()=> {
 </form>
 </div>
 <div>
-    <link to= "/cart">< FashoppingCart/></link>
+    <Link to= "/cart"><FaShoppingCart/></Link>
     <button>Login | register</button>
     <button> <FaUser/></button>
 </div>
