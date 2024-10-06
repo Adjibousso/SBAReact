@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { addToCart } from '../redux/cartSlice';
-
+import { useDispatch } from 'react-redux';
 
 
 const Shop = () => {
+
   const [products, setProducts] = useState([]);
   
 
@@ -20,7 +21,14 @@ const Shop = () => {
 
     fetchProducts();
   }, []);
-
+  const dispatch = useDispatch();
+const handleAdd = (e,product) => {
+    
+        e.stopPropagation();
+        e.preventDefault();
+        dispatch(addToCart(product));
+        alert("Product added to cart");
+    };
   return (
     <section className="shop">
       {products.map((product) => (
@@ -31,7 +39,7 @@ const Shop = () => {
               <p>{product.title}</p>
               <p>${product.price}</p>
             </div>
-            <button onClick={addToCart }>Add to cart</button>
+            <button onClick={(e)=>handleAdd(e, product)}>Add to cart</button>
           </div>
         </article>
       ))}
