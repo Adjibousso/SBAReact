@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { addToCart } from '../redux/cartSlice';
+
 
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -28,7 +31,7 @@ const Shop = () => {
               <p>{product.title}</p>
               <p>${product.price}</p>
             </div>
-            <button>Add to cart</button>
+            <button onClick={addToCart }>Add to cart</button>
           </div>
         </article>
       ))}

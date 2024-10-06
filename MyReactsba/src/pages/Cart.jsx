@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaTrash } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart } from "../redux/cartSlice";
+import { removeFromCart, increaseQuantity,decreaseQuantity } from "../redux/cartSlice";
+import Shop from "./Shop";
 
 
 
@@ -22,9 +23,9 @@ const Cart = () => {
             <button onClick={()=> dispatch(removeFromCart(product.id))}><FaTrash/> </button>
           </div>
           <div className="small-box-item-actions">
-            <button onClick={() => dispatch(decrementQuantity(product.id))}>-</button>
+            <button onClick={()=> dispatch(decreaseQuantity(product.id))}>-</button>
             <p>{product.quantity}</p>
-            <button onClick={() => dispatch(incrementQuantity(product.id))}>+</button>
+            <button onClick={()=> dispatch(increaseQuantity(product.id))}>+</button>
           </div>
           
         </div>
