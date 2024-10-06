@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { Categories } from "../assets/mockData";
 import model from "../assets/images/model.jpg"
 import CategorieSection from "../compoments/CategorieSection";
-import { setProducts } from "../redux/cartSlice";
+import { setProducts } from "../redux/productSlice";
 import { useDispatch,useSelector } from "react-redux";
+import ProductCard from "../compoments/ProductCard";
+import { mockData } from "../assets/mockData";
 
 
  
@@ -14,7 +16,7 @@ const Home = ()=>{
     const dispatch = useDispatch()
     const products = useSelector(state =>state.product)
     useEffect(()=> {
-        dispatch(setProducts())
+        dispatch(setProducts(mockData))
     },[])
     return (
 
@@ -27,23 +29,25 @@ const Home = ()=>{
                         <div>Shop By categories</div>
 
                     </div>
-                    <ul>
+                    <ul >
                         {Categories.map((category, index)=>(
 
-                            <li key={index}>
+                            <li key={index}>{}
                                 <div></div>
                                 {category}
                             </li>
                         ))}
                     </ul>
-                    <div>
-                 <img src={model} alt="image"  className="photo"/>
+                    <div className="sizeIt">
+                 <img src={model} alt="image" />
                     </div>
                 </div>
                 </div>
                 <CategorieSection/>
-                <div> {products.products.slice(0,5).map(((products)=> (
-                    <ProductCard product={product} />)
+                <div className="gallery">
+                     {products.products.map(((product)=> (
+                <ProductCard  product={product}   /> 
+                )
                 ))} </div>
                 </div>
     )

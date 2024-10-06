@@ -15,5 +15,5 @@ const cartSlice = createSlice({
     },
 });
 
-export const { setProducts } = cartSlice.actions; // Corrected this line
+//export const { setProducts } = cartSlice.actions; 
 export default cartSlice.reducer;
