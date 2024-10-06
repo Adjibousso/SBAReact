@@ -397,3 +397,73 @@ button:hover {
 .navicon a:hover {
   text-decoration: underline;
 }
+
+/* cart */
+/* SmallBox.css */
+.small-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  
+}
+
+.small-box h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.small-box-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  
+}
+
+.small-box-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.small-box-item-details {
+  flex: 1;
+}
+
+.small-box-item-details h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.small-box-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.small-box-item-actions p {
+  margin: 0 5px;
+}
+
+.small-box-item-actions button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.small-box-item-actions button:hover {
+  background-color: #ff1a1a;
+}

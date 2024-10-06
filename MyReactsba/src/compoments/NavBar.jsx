@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
+import { useSelector } from "react-redux";
+
 
 
 const NavBar = () => {
+    const products = useSelector(state => state.cart.products)
     return (
         <nav className="nav">
             <div className="container">
@@ -17,7 +20,13 @@ const NavBar = () => {
                     </form>
                 </div>
                 <div className="cart">
-                    <Link to="/cart"><FaShoppingCart /></Link>
+                    <Link to="/cart"><FaShoppingCart />
+                    {products.length > 0 && (
+                        <span className="cartItem">
+                      {products.length}
+                        </span>
+                    )}
+                    </Link>
                     <button className="login">Login | Register</button>
                     <button className="user"><FaUser /></button>
                 </div>
