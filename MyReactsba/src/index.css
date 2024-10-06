@@ -166,6 +166,7 @@ height: 350px;
   flex-wrap: wrap;
   gap: 10px;
   width: fit-content;
+
   
 }
 
@@ -263,4 +264,136 @@ height: 350px;
   display: inline-block;
   background-color: #fa9393;
   font-weight: bold;
+}
+.model{
+  width: 80%;
+  height: 350px;
+  margin-top: -130px;
+}
+
+/* shop.css */
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.details-div {
+  padding: 10px;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-price p {
+  margin: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: rgb(144, 231, 44);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* General styles for the navbar */
+.nav {
+  background-color: #333;
+  color: rgb(38, 118, 184);
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container to center the content */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo and brand name */
+.text-lg {
+  font-size: 24px;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(184, 245, 245);
+  width: 700px;
+}
+
+.fasearch {
+  margin-left: 10px;
+  color: rgb(44, 143, 85);
+}
+
+/* Cart and user icons */
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart a, .login, .user {
+  margin-left: 15px;
+  color: rgb(110, 61, 61);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart a:hover, .login:hover, .user:hover {
+  color: #3740c0;
+}
+
+/* Navigation links */
+.navicon {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.navicon a:hover {
+  text-decoration: underline;
 }

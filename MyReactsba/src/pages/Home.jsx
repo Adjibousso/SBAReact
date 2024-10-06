@@ -39,7 +39,7 @@ const Home = ()=>{
                         ))}
                     </ul>
                     <div className="sizeIt">
-                 <img src={model} alt="image" />
+                 <img src={model} alt="image" className="model"/>
                     </div>
                 </div>
                 </div>
