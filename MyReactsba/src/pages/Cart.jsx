@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaTrash } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
+import { removeFromCart } from "../redux/cartSlice";
 
 
 
@@ -18,7 +19,7 @@ const Cart = () => {
           <div className="small-box-item-details">
             <h5>{product.name}</h5>
             <p>${product.price}</p>
-            <button><FaTrash/> </button>
+            <button onClick={()=> dispatch(removeFromCart(product.id))}><FaTrash/> </button>
           </div>
           <div className="small-box-item-actions">
             <button onClick={() => dispatch(decrementQuantity(product.id))}>-</button>
@@ -46,6 +47,7 @@ const Cart = () => {
             <span>Total price</span>
             <span>${cart.totalPrice}</span>
         </div>
+        <button>Checkout</button>
     </div>
     
   );

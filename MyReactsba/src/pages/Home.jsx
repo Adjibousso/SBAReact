@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Categories } from "../assets/mockData";
 import model from "../assets/images/model.jpg"
-import CategorieSection from "../compoments/CategorieSection";
+import CategorieSection from "../components/CategorieSection";
 import { setProducts } from "../redux/productSlice";
 import { useDispatch,useSelector } from "react-redux";
-import ProductCard from "../compoments/ProductCard";
+import ProductCard from "../components/ProductCard";
 import { mockData } from "../assets/mockData";
 
 
