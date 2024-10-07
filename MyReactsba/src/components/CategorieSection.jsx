@@ -1,8 +1,8 @@
-import React from "react";
-import { Categories } from "../assets/mockData";
-import Man from "../assets/images/man.jpg";
-import Woman from "../assets/images/woman.jpg";
-import Kids from "../assets/images/kids.jpg";
+// import React from "react";
+// import { Categories } from "../assets/mockData";
+// import Man from "../assets/images/man.jpg";
+// import Woman from "../assets/images/woman.jpg";
+// import Kids from "../assets/images/kids.jpg";
 
 const categories = [
     

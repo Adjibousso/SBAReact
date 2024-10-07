@@ -7,8 +7,9 @@ const Checkout= ()=> {
 
             <div>
 
-                <button>&times</button>
+            <h1>Total order</h1>
             </div>
+            <div>Billing Inf</div>
         </div>
     )
 }
