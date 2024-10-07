@@ -12,7 +12,7 @@ const Footer =()=> {
                     
                     
                     
-                    Thank you for visite my shop 
+                    Thank you for visiting my shop 
 
                     <div className="linkMedia">
                     Follow me <br /> <br />
