@@ -27,7 +27,7 @@ const handleAdd = (e,product) => {
         e.stopPropagation();
         e.preventDefault();
         dispatch(addToCart(product));
-        alert("Product added to cart");
+        
     };
   return (
     <section className="shop">

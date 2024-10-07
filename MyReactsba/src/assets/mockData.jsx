@@ -11,12 +11,6 @@ import dunda5 from "../assets/images/dunda5.jpg"
 
 
 export const Categories = [
-"Electronic",
-"Fashion",
-"Home Kitchen",
-"Beauty",
-"AUtomobile",
-"car",
 
 
 
