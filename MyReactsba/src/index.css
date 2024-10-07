@@ -404,9 +404,22 @@ button:hover {
   background-color: #ff1a1a;
 }
 .footer{
-  background-color: lightgrey;
+  
   display: flex;
   justify-items: center;
   justify-content: space-around;
-  background: #ddd;
+  background-color: #ddd;
+  border: solid 1px black;
+  overflow: auto;
+  
+}
+.linkMedia{
+  background-color: lightgrey;
+  justify-content: space-around;
+  width: 100px;
+}
+.africart{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }

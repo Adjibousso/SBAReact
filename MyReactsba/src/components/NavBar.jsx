@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
-
+import africart from "../assets/images/africart.png";
 
 
 const NavBar = () => {
@@ -11,7 +11,8 @@ const NavBar = () => {
         <nav className="nav">
             <div className="container">
                 <div className="text-lg font-bold">
-                    <Link to="/">Afric'art shop</Link>
+                    <Link to="/">Adji's shop </Link>
+                    <img src={africart} alt=""  className="africart"/>
                 </div>
                 <div className="form">
                     <form>
