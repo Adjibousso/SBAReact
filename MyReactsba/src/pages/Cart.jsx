@@ -20,6 +20,7 @@ const Cart = () => {
           <div className="small-box-item-details">
             <h5>{product.name}</h5>
             <p>${product.price}</p>
+
             <button onClick={()=> dispatch(removeFromCart(product.id))}><FaTrash/> </button>
           </div>
           <div className="small-box-item-actions">

@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
         e.stopPropagation();
         e.preventDefault();
         dispatch(addToCart(product));
-        
+        alert("Product added to cart");
     };
     return (
         <div className="product-card">

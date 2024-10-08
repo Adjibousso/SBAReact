@@ -27,6 +27,7 @@ const handleAdd = (e,product) => {
         e.stopPropagation();
         e.preventDefault();
         dispatch(addToCart(product));
+        alert("Item added to cart")
         
     };
   return (
